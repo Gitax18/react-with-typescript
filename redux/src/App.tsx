@@ -1,8 +1,13 @@
+import RepositoriesList from "./components/RepositoriesList";
+import { Provider } from "react-redux";
+import { store } from "./state";
+
 function App() {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <Provider store={store}>
+      <h1>Search For NPM Package</h1>
+      <RepositoriesList />
+    </Provider>
   );
 }
 
